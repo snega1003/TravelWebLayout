@@ -107,6 +107,30 @@ img{
     margin: 0 auto; /*выравнивание по центру для блока внутри его родителя -- один из вариантов*/
 }
 
+.wrapper-full{
+    max-width: 1264px;
+    margin: 0 auto;
+}
+
+.section-title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after{
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /*Header styles start*/
 
 .header{
@@ -157,9 +181,10 @@ img{
 
 .intro{
     min-height: 100vh;
-    background: url(../img/svg/intro-bg.svg) no-repeat center;
+    background: url(../img/jpg/bckg-image.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
+    padding-bottom: 223px;
 }
 
 .intro__title{
@@ -306,6 +331,114 @@ img{
 .benefit__card-more:hover,
 .benefit__card-more:focus{
     background: url(../img/svg/arrow-ico.svg) no-repeat right center;
+    opacity: .65;
 }
 
 /*Benefits styles end*/
+
+
+/*Places styles start*/
+
+.places{
+    margin-bottom: 131px;
+}
+
+.places__caption{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.places__title{
+    margin-right: 15px;
+}
+
+.places__view-all{
+    text-decoration: none;
+    color: #006DFE;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-right: 56px;
+    background: url(../img/svg/arrow-ico.svg) no-repeat 95% center;
+    transition: .2s all;
+}
+
+.places__view-all:hover,
+.places__view-all:focus{
+    background: url(../img/svg/arrow-ico.svg) no-repeat right center;
+    opacity: .65;
+}
+
+.places__cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places__card{
+    position: relative;
+    overflow: hidden;
+}
+
+.places__card::after{ /*псевдоэлемент, для него и position: relative*/
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.places__card:hover .places__card-pic{
+    transform: scale(1.05);
+}
+
+.places__card-title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    z-index: 3;
+}
+
+.places__card_size-lg{
+    grid-column: span 3;
+}
+
+.places__card_size-sm{
+    grid-column: span 2;
+}
+
+.places__card-pic{
+    width: 100%;
+    transition: 0.15s all;
+}
+
+.places__card-pic_size-lg{
+    height: 354px;
+    object-fit: cover;
+}
+
+.places__card-pic_size-sm{
+    height: 283px;
+    object-fit: cover;
+}
+
+.places__card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+/*Places styles end*/
