@@ -418,6 +418,7 @@ img{
 }
 
 .places__card-pic{
+    display: block; /*vertical-align: top;*/
     width: 100%;
     transition: 0.15s all;
 }
