@@ -324,6 +324,7 @@ img{
     text-decoration: none;
     color: #006DFE;
     text-transform: uppercase;
+    /*добавление стрелочки: */
     background: url(../img/svg/arrow-ico.svg) no-repeat 95% center;
     transition: .2s all;
 }
@@ -443,3 +444,72 @@ img{
 }
 
 /*Places styles end*/
+
+/*Tours styles start*/
+
+.tours{
+    margin-bottom: 137px;
+}
+
+.tours__tour{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 77px 108px;
+    align-items: center;
+    margin-bottom: 77px;
+}
+
+.tour__info{
+    padding-left: 47px;
+}
+
+.tour__title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+
+.tour__disc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+
+.tour__more{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    color: #006DFE;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/svg/arrow-ico.svg) no-repeat 95% center;
+    transition: .2s all;
+}
+
+.tour__more:hover,
+.tour__more:focus{
+    background: url(../img/svg/arrow-ico.svg) no-repeat right center;
+    opacity: .65;
+}
+
+.tour__thumb{
+    display: block;
+}
+
+/*Tours styles end*/
+
+/*Top styles start*/
+
+.top{
+    margin-bottom: 86px;
+}
+.top__title{
+    margin-bottom: 54px;
+}
+
+
+
+/*Top styles end*/
