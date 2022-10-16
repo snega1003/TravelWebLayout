@@ -717,6 +717,44 @@ img{
 /*Media start*/
 /*Медиа-запросы - запросы на ширину экрана для адаптивности*/
 
+@media screen and (max-width: 960px){
+    .search-form__field{
+        margin-bottom: 25px;
+    }
+
+    .benefits{
+        margin-bottom: 75px;
+    }
+
+    .benefits__cards{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 60px;
+        grid-column-gap: 35px;
+    }
+
+    .benefits__title{
+        padding: 55px 15px;
+    }
+
+    .benefits__wrap{
+        box-shadow: none;
+    }
+
+    .places__card_size-lg{
+        grid-column: span 6;
+    }
+
+    .places__card_size-sm{
+        grid-column: span 6;
+    }
+    
+    .places__card-pic_size-sm{
+        height: 283px;
+        object-fit: cover;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .header__burger{
         display: block;
