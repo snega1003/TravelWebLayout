@@ -755,7 +755,6 @@ img{
     }
 }
 
-/*media 767*/
 @media screen and (max-width: 767px) {
     .header__burger{
         display: block;
