@@ -714,8 +714,8 @@ img{
 
 /*Footer styles end*/
 
-/*Media start*/
-/*Медиа-запросы - запросы на ширину экрана для адаптивности*/
+/* Media start*/
+/* Медиа-запросы - запросы на ширину экрана для адаптивности */
 
 @media screen and (max-width: 960px){
     .search-form__field{
